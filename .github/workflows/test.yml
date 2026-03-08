@@ -6,10 +6,10 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
-      - name: Install NodeJs
-        uses: actions/npm@5
-        with:
-          node-version: 18
+  #    - name: Install NodeJs
+  #      uses: actions/npm@5
+  #      with:
+  #        node-version: 18
       - name: Install dependency
         run: npm ci
       - name: Run tests 
